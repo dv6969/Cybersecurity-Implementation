@@ -4,9 +4,11 @@ Below is a simplified explanation of how a risk value is calculated, using a pra
 ________________________________________
 1️⃣ Identify the Asset 🚗
 The first step is identifying the asset that needs protection.
+
 Example asset:
 Torque Request CAN Signal
 This signal is critical because it directly influences vehicle acceleration and power delivery. If manipulated, it can directly affect vehicle safety and control.
+
 📘 Reference Document:
 ISO/SAE 21434 – Clause 15 (Threat Analysis and Risk Assessment) describes the identification of assets and the context for cybersecurity analysis.
 🖼 Suggested Visual for Post
@@ -14,9 +16,11 @@ ISO/SAE 21434 – Clause 15 (Threat Analysis and Risk Assessment) describes the 
 ________________________________________
 2️⃣ Identify the Threat Scenario 🧑‍💻
 Next, we define a realistic threat scenario.
+
 Example threat:
 An attacker injects or modifies a CAN message to manipulate the torque request value.
 This could be performed using a CAN interface tool connected to the vehicle network, allowing malicious messages to be transmitted.
+
 📘 Reference Document:
 ISO/SAE 21434 – Clause 15.4 (Threat Scenario Identification) explains how to define possible attack scenarios affecting identified assets.
 🖼 Suggested Visual for Post
@@ -28,6 +32,7 @@ ISO 21434 requires evaluating the impact of a successful attack across four cate
 • Financial Impact (F) – Could it cause financial loss to the OEM or customer?
 • Operational Impact (O) – Could vehicle functionality be disrupted?
 • Privacy Impact (P) – Could personal data be exposed?
+
 For our example:
 Safety Impact → Major (vehicle acceleration could be manipulated)
 Financial Impact → Moderate (possible warranty or liability issues)
@@ -35,6 +40,7 @@ Operational Impact → Moderate (vehicle behavior may become unpredictable)
 Privacy Impact → Negligible
 From these ratings we derive the overall Impact Level.
 ➡ Derived Impact Level = Major
+
 📘 Reference Document:
 ISO/SAE 21434 – Clause 15 explains how impacts are evaluated and categorized to determine the overall severity of a threat.
 🖼 Suggested Visual for Post
